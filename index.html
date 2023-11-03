@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --bg-color: #d5e1ef;
+        --text-color: #273752;
+        --paragraph-text-color: #afb3b8;
+      }
+
+      body {
+        background-color: var(--bg-color);
+      }
+
+      .card__area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .card__area > .card {
+        max-width: 280px;
+        height: 470px;
+        padding: 15px 20px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.404);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .card > .card__qr > img {
+        width: 285px;
+        border-radius: 10px;
+      }
+      .card > .card__text {
+        position: relative;
+        top: -25px;
+        text-align: center;
+      }
+      .card__text > span {
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        color: var(--text-color);
+        line-height: 26px;
+      }
+      .card__text > p{
+        font-family: "Montserrat" , sans-serif;
+        font-size: 16px;
+        margin-top: 18px;
+        color: var(--paragraph-text-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card__area">
+      <div class="card">
+        <div class="card__qr">
+          <img src="./images/image-qr-code.png" alt="" />
+        </div>
+        <div class="card__text">
+          <span>
+            Improve your front-end <br />
+            skills by building projects
+          </span>
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
